@@ -6,7 +6,7 @@ b=[int(i) for i in theTime.split(":")]  #The theTime.split(":") function splits 
 second=b[0]*3600+b[1]*60+b[2]  #the number of seconds is calculated by multiplying the hours by 3600 (the number of seconds in an hour), adding the minutes multiplied by 60 (the number of seconds in a minute), and adding the remaining seconds. This calculation returns the total number of seconds for the countdown timer.
 
 
-for x in range(second, 0, -1):  #The range function is used with three arguments: second is the total number of seconds for the countdown, 0 is the stopping point of the countdown (when it reaches zero), and -1 is the step value, which counts down by one at each iteration of the loop.
+for x in range(second, 0, -1):  #The range function is used with three arguments: second is the total number of seconds for the countdown, 0 is the stopping point of the countdown, and -1 is the step value, which counts down by one at each iteration of the loop.
      sec = x % 60           #the number of seconds remaining (x) is converted back into hours, minutes, and seconds using integer division and modulo operations.
      minute = int(x / 60) % 60
      hours = int(x / 3600)
